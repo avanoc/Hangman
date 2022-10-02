@@ -53,7 +53,7 @@ def select_letters():
         letters = input("Select number of letters (3 to 7): ")
 
         # Only accept numbers:
-        if letters.isnumeric():
+        if letters.isnumeric() and 3 <= int(letters) <= 7:
             break
     return int(letters)
 
